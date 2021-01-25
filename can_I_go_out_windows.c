@@ -26,7 +26,7 @@ int main(){
     printf("Are you in the weekend? (Y/N): ");
     scanf("%c",&trash);
     scanf("%c",&weekend);
-    if (weekend == "N" || weekend == "n"){
+    if (weekend == 'N' || weekend == 'n'){
         if (age >= 20 && age < 65){
             if (tm.tm_hour >= 10 && tm.tm_hour < 21)
                 printf("You can go out!");

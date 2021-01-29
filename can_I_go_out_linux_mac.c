@@ -23,7 +23,7 @@ int main(){
     }
     age = atoi(age_str);
     printf("\nThe day is %s",days[tm.tm_wday]);
-    printf("\nThe time is %d:%d\n\n",tm.tm_hour,tm.tm_min);
+    printf("\nThe time is %d:%.2d\n\n",tm.tm_hour,tm.tm_min);
     if (tm.tm_wday != 0 && tm.tm_wday != 6){
         if (age >= 20 && age < 65){
             if (tm.tm_hour >= 10 && tm.tm_hour < 21)
